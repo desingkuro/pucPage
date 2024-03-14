@@ -1,0 +1,45 @@
+.containerPrincipal{
+    min-height: 100vh;
+    width: 100%;
+    min-width: 384px;
+    position: relative;
+}
+.containerMain{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+.imagenPrincipal{
+    height: 400px;
+    padding: 15px;
+    overflow: hidden;
+    >img{
+        height: 400px;
+    }
+}
+.Titulo{
+    height:200px;
+    max-width: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    >h1{
+        font-size: 2rem;
+    }
+    >h1>span{
+        color: #872341;
+        font-weight: 900;
+        font-size: 2.5rem;
+    }
+}
+.svgOla{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: 0;
+}

@@ -1,0 +1,39 @@
+.cabecera{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 30px;
+    min-width: 384px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    >div{
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        >p{
+            font-weight: 600;
+        }
+        >img{
+            height: 40px;
+            width: 40px;
+            border-radius:10px;
+        }
+    }
+}
+.btnDescarga{
+    height: 40px;
+    padding: 0% 16px;
+    border: none;
+    border-radius:18px;
+    background: #872341;
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
