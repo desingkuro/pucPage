@@ -9,7 +9,7 @@ export function Main() {
             <Header />
             <main className='containerMain'>
                 <div className='Titulo'>
-                    <h1><span>PUC</span> App (Plan Unico De Cuentas)</h1>
+                    <h1 data-meta="name"><span>PUC</span> App (Plan Unico De Cuentas)</h1>
                     <p>Obten al alcance de tu mano todo lo que necesitas para tus movimientos contables.</p>
                     <BtnDowload/>
                 </div>
