@@ -1,0 +1,52 @@
+.aboutInem{
+    max-width: 750px;
+    margin: 20px 0px;
+    background-color: #ffff;
+    border-radius: 20px;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 380px;
+}
+
+.tituloInem{
+    color: #872341;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.descripcionInem{
+    max-width: 80%;
+    color: #000;
+}
+
+.linkInem{
+    width: 80%;
+    height: 70px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #000;
+}
+
+.linkInem>p{
+    font-size: 1.2rem;
+}
+.linkInem>a{
+    text-decoration: none;
+    background-color: #0e92df;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffff;
+    transition: all ease-in-out .3s;
+    font-weight: 700;
+}
+.linkInem>a:hover{ 
+    background-color: #3db8ff;
+    transform: scale(1.01);
+}

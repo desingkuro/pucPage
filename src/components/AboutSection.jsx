@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/AboutSection.css';
 import pucImagen from '../assets/pucImagen.png';
 import { FaMobileAlt, FaSearch, FaSync, FaWifi, FaUserTie, FaSmile } from 'react-icons/fa';
+import { AboutInem } from './AbautInem';
 
 const AboutSection = () => {
     const tamañoIcono=45;
@@ -56,7 +57,7 @@ const AboutSection = () => {
                     </ul>
                 </div>
             </section>
-            
+            <AboutInem />
         </section>
     );
 };
