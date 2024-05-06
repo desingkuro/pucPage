@@ -6,8 +6,9 @@
     flex-direction: column;
     width: 100%;
     >div{
-        min-width: 380px;
+        min-width: 360px;
         max-width: 720px;
+        padding: 14px;
         gap: 5px;
         text-align: justify;
         >p{
