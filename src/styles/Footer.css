@@ -1,51 +1,65 @@
 /* Footer.css */
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: white;
-    color: black;
-    >p{
-        margin: 5px;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  > p {
+    margin: 5px;
   }
-  
-  .logo img {
-    width: 60px;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 10px;
-  }
+}
 
-  
-  .social-links {
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+
+/* Estilo de cada sección individual */
+.developer-section {
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+
+.logo img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 70px;
+  list-style: none;
+  margin: 10px;
+  margin-left: 0;
+  flex-wrap: wrap;
+  > li {
+    margin-left: 0;
+    height: 60px;
+    width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    min-height: 70px;
-    list-style: none;
-    margin: 10px;
-    flex-wrap: wrap;
-    >li{
-        height: 60px;
-        width: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
   }
-  
-  .social-links li a {
-    color: black;
-    font-size: 20px;
-    transition: all 0.3s ease;
-  }
-  
-  .social-links li a:hover {
-    color: #0088ad;
-    transform: scale(1.08);
-  }
-  
+}
+
+.social-links li a {
+  color: black;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: #0088ad;
+  transform: scale(1.08);
+}
