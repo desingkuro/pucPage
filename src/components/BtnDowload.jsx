@@ -1,6 +1,5 @@
 import "../styles/BtnDowload.css";
 import { MdOutlineDownload } from "react-icons/md";
-import axios from "axios";
 
 export function BtnDowload() {
   return (
@@ -12,7 +11,7 @@ export function BtnDowload() {
       </div>
       <a
         href={
-          "https://dl.dropbox.com/scl/fi/w85a2tdujpz1dcjg0h69f/pucApk2.2.apk?rlkey=i4cxd1shmf71tbjqmmbcz2veu&st=ni7qw4sv&dl=0"
+          'https://dl.dropbox.com/scl/fi/efcz4odas7xisejw0weut/puc1.0.0.apk?rlkey=er1y0mn4ov80407wprn1oblsa&e=1&st=dhwage0o&dl=0'
         }
       >
         Descargar
