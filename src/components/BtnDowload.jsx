@@ -1,5 +1,5 @@
-import "../styles/BtnDowload.css";
 import { MdOutlineDownload } from "react-icons/md";
+import "../styles/BtnDowload.css";
 
 export function BtnDowload() {
   return (
@@ -10,9 +10,8 @@ export function BtnDowload() {
         </div>
       </div>
       <a
-        href={
-          'https://dl.dropbox.com/scl/fi/efcz4odas7xisejw0weut/puc1.0.0.apk?rlkey=er1y0mn4ov80407wprn1oblsa&e=1&st=dhwage0o&dl=0'
-        }
+        href="https://play.google.com/store/apps/details?id=com.yeiler2209.puc&hl=es_CO"
+        target="_blank"
       >
         Descargar
       </a>
