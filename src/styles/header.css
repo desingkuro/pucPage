@@ -8,9 +8,10 @@
     width: 100%;
     position: fixed;
     z-index: 2;
-    background: rgba( 255, 255, 255, 0.2 );
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur( 5px );
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: background var(--transition-base), box-shadow var(--transition-base);
     >div{
         padding: 10px 0px;
         display: flex;
@@ -25,6 +26,11 @@
             border-radius:10px;
         }
     }
+}
+
+.cabecera--scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 .btnDescarga{
     height: 40px;

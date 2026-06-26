@@ -11,30 +11,34 @@
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
+    gap: 40px;
 }
 .imagenPrincipal{
-    height: 400px;
     padding: 15px;
     overflow: hidden;
     >img{
         height: 400px;
+        animation: float 4s ease-in-out infinite;
     }
 }
 .Titulo{
-    height:200px;
-    max-width: 384px;
+    max-width: 420px;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
     >h1{
         font-size: 2rem;
     }
     >h1>span{
-        color: #872341;
+        color: var(--color-primary);
         font-weight: 900;
         font-size: 2.5rem;
+    }
+    >p{
+      font-size: 1.1rem;
+      line-height: 1.5;
     }
 }
 .svgOla{

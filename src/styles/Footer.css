@@ -1,12 +1,9 @@
-/* Footer.css */
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  background-color: white;
-  color: black;
+  padding: 40px 20px 20px;
   > p {
     margin: 5px;
   }
@@ -19,18 +16,22 @@
   margin-bottom: 2rem;
 }
 
-/* Estilo de cada sección individual */
 .developer-section {
   padding: 1rem;
   border-radius: 8px;
+  text-align: center;
 }
-
 
 .logo img {
   width: 60px;
   height: auto;
   margin-bottom: 20px;
   border-radius: 10px;
+  transition: transform var(--transition-base);
+}
+
+.logo img:hover {
+  transform: scale(1.1);
 }
 
 .social-links {
@@ -44,7 +45,6 @@
   margin-left: 0;
   flex-wrap: wrap;
   > li {
-    margin-left: 0;
     height: 60px;
     width: 60px;
     display: flex;
@@ -54,12 +54,12 @@
 }
 
 .social-links li a {
-  color: black;
+  color: var(--color-text);
   font-size: 20px;
-  transition: all 0.3s ease;
+  transition: all var(--transition-base);
 }
 
 .social-links li a:hover {
-  color: #0088ad;
-  transform: scale(1.08);
+  color: var(--color-secondary);
+  transform: scale(1.2);
 }
