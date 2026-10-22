@@ -1,49 +1,258 @@
-.containerPrincipal{
-    min-height: 100vh;
-    width: 100%;
-    min-width: 384px;
+/* =========================================================
+   Hero
+   ========================================================= */
+.hero {
     position: relative;
+    padding-top: calc(var(--header-h) + clamp(24px, 5vw, 56px));
+    padding-bottom: clamp(96px, 11vw, 150px);
+    overflow: clip;
+    background:
+        radial-gradient(60% 55% at 82% 18%, rgba(0, 153, 255, 0.10), transparent 70%),
+        radial-gradient(45% 45% at 8% 40%, rgba(135, 35, 65, 0.06), transparent 70%),
+        var(--surface);
 }
-.containerMain{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+
+.hero__inner {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
     align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-    gap: 40px;
+    gap: clamp(28px, 6vw, 72px);
+    min-height: min(700px, calc(100svh - var(--header-h) - 120px));
 }
-.imagenPrincipal{
-    padding: 15px;
-    overflow: hidden;
-    >img{
-        height: 400px;
-        animation: float 4s ease-in-out infinite;
-    }
-}
-.Titulo{
-    max-width: 420px;
+
+.hero__content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    gap: 22px;
+}
+
+.hero__title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: var(--step-4);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+}
+
+.hero__brand {
+    color: var(--burgundy-500);
+    font-weight: 800;
+}
+
+.hero__sub {
+    font-size: var(--step-2);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    font-weight: 600;
+    color: var(--ink-soft);
+}
+
+.hero__lead {
+    max-width: 46ch;
+    color: var(--muted);
+    font-size: var(--step-1);
+    line-height: 1.55;
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 12px;
-    >h1{
-        font-size: 2rem;
+}
+
+.btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 22px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-full);
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-ghost:hover {
+    border-color: var(--blue-300);
+    background: var(--blue-50);
+    transform: translateY(-2px);
+}
+
+.hero__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    padding-top: 4px;
+}
+
+.hero__meta li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--ink-soft);
+    font-size: var(--step--1);
+    font-weight: 500;
+}
+
+.hero__meta svg {
+    color: var(--burgundy-500);
+    flex: none;
+}
+
+/* ---------- Visual ---------- */
+.hero__visual {
+    position: relative;
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+}
+
+.hero__glow {
+    position: absolute;
+    inset: -8% -4%;
+    z-index: -1;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 45%, rgba(0, 153, 255, 0.30), transparent 72%);
+    filter: blur(20px);
+}
+
+.hero__phone {
+    position: relative;
+    display: grid;
+    place-items: center;
+    animation: float 7s ease-in-out infinite;
+}
+
+.hero__phone img {
+    width: auto;
+    height: clamp(340px, 40vw, 470px);
+    border-radius: 22px;
+    /* oculta la marca de agua "Made with PosterMyWall" del pie */
+    clip-path: inset(0 0 5.5% 0 round 22px);
+    mix-blend-mode: multiply;
+    filter: drop-shadow(0 24px 40px rgba(15, 23, 42, 0.18));
+}
+
+.hero__chip {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: var(--radius-full);
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(0, 119, 204, 0.14);
+    box-shadow: var(--shadow-md);
+    color: var(--ink);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    white-space: nowrap;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.hero__chip svg {
+    color: var(--blue-600);
+    flex: none;
+}
+
+.hero__chip--top {
+    top: 2%;
+    left: -12%;
+}
+
+.hero__chip--bottom {
+    right: -10%;
+    bottom: 6%;
+}
+
+/* ---------- Wave ---------- */
+.hero__wave {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    color: var(--blue-600);
+    pointer-events: none;
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 900px) {
+    .hero {
+        padding-bottom: clamp(90px, 14vw, 130px);
     }
-    >h1>span{
-        color: var(--color-primary);
-        font-weight: 900;
-        font-size: 2.5rem;
+
+    .hero__inner {
+        grid-template-columns: 1fr;
+        min-height: 0;
+        gap: 40px;
     }
-    >p{
-      font-size: 1.1rem;
-      line-height: 1.5;
+
+    .hero__visual {
+        order: 2;
+    }
+
+    .hero__phone img {
+        height: clamp(300px, 58vw, 420px);
+    }
+
+    .hero__chip--top {
+        left: -4%;
+    }
+
+    .hero__chip--bottom {
+        right: -4%;
     }
 }
-.svgOla{
-    position: absolute;
-    left: 0%;
-    bottom: 0%;
-    z-index: 0;
+
+@media (max-width: 520px) {
+    .hero {
+        padding-top: calc(var(--header-h) + 20px);
+    }
+
+    .hero__title {
+        letter-spacing: -0.025em;
+    }
+
+    .hero__actions {
+        width: 100%;
+    }
+
+    .hero__actions .btn-download,
+    .hero__actions .btn-ghost {
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+
+    .hero__chip {
+        font-size: 0.75rem;
+        padding: 8px 12px;
+    }
+
+    .hero__chip--top {
+        top: 0;
+        left: -2%;
+    }
+
+    .hero__chip--bottom {
+        right: -2%;
+        bottom: 4%;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero__chip--top {
+        display: none;
+    }
 }

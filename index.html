@@ -2,24 +2,26 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/icon.jpg" />
+    <link rel="icon" type="image/jpeg" href="/src/assets/icon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0077cc" />
     <meta name="google-site-verification" content="srpobmB6PnvvRSJmUKOmfoHdv2At5nSNQxyArRjBSgk" />
-    
+
     <meta name="description" content="PUC Mobile Inem Simón Bolívar: Una herramienta contable integral para traders, contadores y estudiantes. Descarga la PUC APK para tener acceso a información contable detallada y actualizaciones constantes en tu dispositivo móvil." />
-    
+
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    
+
     <link rel="canonical" href="https://puc-app-mobile.netlify.app/" />
-    
+
     <meta name="author" content="Andrés Licona y Yeiler Simons Romero" />
     <meta name="keywords" content="PUC Mobile Inem Simón Bolívar, Plan Único de Cuentas, contabilidad, app móvil, descargar PUC APK, gestión contable, actualizaciones constantes, interfaz fácil de usar" />
-    
+
     <meta property="og:title" content="PUC Mobile Inem Simón Bolívar" />
     <meta property="og:description" content="PUC Mobile Inem Simón Bolívar: Una herramienta contable integral para traders, contadores y estudiantes." />
     <meta property="og:url" content="https://puc-app-mobile.netlify.app/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://puc-app-mobile.netlify.app/icon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <script type="application/ld+json">
     {
@@ -39,9 +41,24 @@
     }
     </script>
 
+    <!-- Scroll reveal: progressive enhancement with a hard safety net -->
+    <script>
+      (function () {
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        if (reduce) return
+        document.documentElement.classList.add('reveal-enabled')
+        setTimeout(function () {
+          document.querySelectorAll('[data-reveal]').forEach(function (el) {
+            el.classList.add('revealed')
+          })
+        }, 2500)
+      })()
+    </script>
+
     <title>PUC Mobile Inem Simón Bolívar</title>
   </head>
   <body>
+    <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
